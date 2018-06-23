@@ -5,5 +5,5 @@
 # Code
 + ATT_RNN.py
 # Result
-+ RNN.txt
++ Vanilla_RNN.txt
 + ATT_RNN.txt
