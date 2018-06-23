@@ -1,4 +1,7 @@
 # NLP_Final_Term21_semeval2010_task8
+# Data
++ TRAIN_FILE.txt
++ TEST_FILE.txt
 # Code
 + ATT_RNN.py
 # Result
