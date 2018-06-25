@@ -49,7 +49,7 @@ def RNN_model(input_layer, num_class):  # RNN model
     # vector = Bidirectional(CuDNNGRU(hidden_dim, return_sequences=False, kernel_regularizer=keras.regularizers.l2(reg)))(vector)
     lstm = Bidirectional(CuDNNGRU(hidden_dim, return_sequences=True, kernel_regularizer=keras.regularizers.l2(reg)))(input_layer)
     # lstm = Bidirectional(CuDNNGRU(hidden_dim, return_sequences=True, kernel_regularizer=keras.regularizers.l2(reg)))(lstm)
-    ee = Dot(axes=-1, normalize=True)([vector, lstm])
+    ee = Dot(axes=-1, normalize=True)([vector, lstm])  # calculate cosine similarity
     weights = Lambda(smoothing_attention)(ee)
     weights = RepeatVector(2*hidden_dim)(weights)
     weights = Permute((2, 1))(weights)
