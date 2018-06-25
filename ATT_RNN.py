@@ -12,6 +12,7 @@ import random as rn
 import keras
 import os
 os.environ['PYTHONHASHSEED'] = '0'
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'  # use GPU 0
 from keras.layers import Embedding, LSTM, Conv1D, BatchNormalization, Multiply, Permute, Dot
 from keras.layers import Dropout, MaxPooling1D, GlobalMaxPooling1D, Lambda, RepeatVector
 from keras.layers import Input, Activation, Bidirectional, GRU, Dense, CuDNNGRU, CuDNNLSTM
@@ -69,7 +70,6 @@ def RNN_model(input_layer, num_class):  # RNN model
 
 
 if __name__ == "__main__":
-    os.environ['CUDA_VISIBLE_DEVICES'] = '0'  # use GPU 0
     embeddings_index = {}
     with open(os.path.join(GLOVE_DIR, 'glove.42B.300d.txt')) as f:  # read pre-trained word embedding
         for line in f:
