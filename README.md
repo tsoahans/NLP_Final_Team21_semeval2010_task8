@@ -15,4 +15,4 @@ $ perl semeval2010_task8_scorer-v1.2.pl predict.txt answer_key.txt
 + Vanilla_RNN.txt
 + ATT_RNN.txt
 # Reference
-+ Neural Attention Models for Sequence Classification: Analysis and Application to Key Term Extraction and Dialogue Act Detection.
++ Sheng-syun Shen, Hung-Yi Lee, "Neural Attention Models for Sequence Classification: Analysis and Application to Key Term Extraction and Dialogue Act Detection"
