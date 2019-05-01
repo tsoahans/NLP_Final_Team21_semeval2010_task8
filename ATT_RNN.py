@@ -35,7 +35,7 @@ BASE_DIR = ''
 GLOVE_DIR = os.path.join(BASE_DIR, '')
 MAX_SEQUENCE_LENGTH = 100  # max input sequence length
 EMBEDDING_DIM = 300  # word embedding size
-VALIDATION_SPLIT = 0.1  # validation ratio
+VALIDATION_SPLIT = 0.1  # ratio of validation data
 
 
 def RNN_model(input_layer, num_class):  # RNN model
