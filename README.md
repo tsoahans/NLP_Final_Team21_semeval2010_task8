@@ -1,4 +1,4 @@
-# NLP_Final_Term21_semeval2010_task8
+# NLP_Final_Team21_semeval2010_task8
 # Run
 ```shell
 $ python3 ATT_RNN.py
